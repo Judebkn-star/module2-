@@ -10,7 +10,7 @@
 
 # # TODO: Remove the second fruit from the list
 
-# del favourite_fruits[2]
+# del favourite_fruits[2] ou favourite_fruits.pop[2]
 # print(favourite_fruits)
 
 # # TODO: Sort the list alphabetically
@@ -59,34 +59,112 @@
 
 
 
-# EXERCICE 3
+# # EXERCICE 3
 
-# TODO: Create a dictionary representing a person (name, age, city)
+# # TODO: Create a dictionary representing a person (name, age, city)
 
-person = {
-    "Name": "Jude",
-    "age":22,
-    "city": "Paris"
-}
-print(person)
+# person = {
+#     "Name": "Jude",
+#     "age":22,
+#     "city": "Paris"
+# }
+# print(person)
 
-# TODO: Add a new key-value pair for the person's occupation
-person['occupation'] = "Acteur"
-print(person)
+# # TODO: Add a new key-value pair for the person's occupation
+# person['occupation'] = "Acteur"
+# print(person)
 
-# TODO: Update the person's age
+# # TODO: Update the person's age
 
-person["age"] = 23
-print(f'Son age est: {person["age"]}')
+# person["age"] = 23
+# print(f'Son age est: {person["age"]}')
 
-# TODO: Remove the 'city' key-value pair
+# # TODO: Remove the 'city' key-value pair
 
-del person["city"]
-print(person)
-# TODO: Print all keys, then all values
-
+# del person["city"]
+# print(person)
 
 
-# TODO: Check if a specific key exists in the dictionary
+# # TODO: Print all keys, then all values
+# print("Les clés :", person.keys())
+# print("Les valeurs :", person.values())
 
-# Print the final dictionary
+# # TODO: Check if a specific key exists in the dictionary
+# if "occupation" in person:
+#     print("La clé 'occupation' existe bien dans le dictionnaire.")
+# else:
+#     print("La clé 'occupation' n'existe pas.")
+
+
+
+
+# # Exercice 4
+
+# # TODO: Create two sets of numbers
+
+# numero= {12,14,23,25}
+# chiffre = {1,2,3,4,}
+
+# print(f'Les numéros sont : {numero},Les chiffres sont {chiffre}')
+
+# # TODO: Find the union of the two sets
+
+# union_set = numero.union(chiffre)
+# print(f'Les numéro et chiffres sont {union_set}')
+
+
+# # TODO: Find the difference between the first and second set
+
+# intersection_set = numero.intersection(chiffre)
+# print(intersection_set)
+# difference_set = numero.difference(chiffre)
+# print(difference_set)
+
+# # TODO: Add a new element to one of the sets
+
+# intersection_set.add(32)
+# print(intersection_set)
+
+
+# # TODO: Remove an element from one of the sets
+# intersection_set.remove(32) 
+# print(f'Intersection après suppression : {intersection_set}')
+
+# # Print the results of each operation
+# print(f'Union : {union_set}')
+# print(f'Intersection : {intersection_set}')
+# print(f'Différence : {difference_set}') 
+
+#Exercice 5
+
+# TODO: Create a list of dictionaries representing books (title, author, year)
+
+book = [{
+    "title" : "Moi",
+    "author": "Jude",
+    "Year": 2025
+}]
+
+print(book)
+
+# TODO: Add a new book to the list
+
+new_book = [{
+    "title" : "Tu casses la tête",
+    "author": "La flemme",
+    "year": 2026
+}]
+
+book.append(new_book)
+print(f'Les nouvelles listes sont : {book}')
+
+# TODO: Sort the list of books by year
+
+book.sort()
+
+# TODO: Create a dictionary where keys are authors and values are lists of their books
+
+# TODO: Print all books by a specific author
+
+# Print the final nested data structure
+
